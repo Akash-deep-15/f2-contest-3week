@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <p class="headding">Library Management System</p>
+
+        <div class="form-container">
+            <form action="">
+                <label for="bName" class="bookName">Book Name</label>
+                <input type="text" id="bName" name="bName" class="bookText">
+                <br>
+                <label for="pName" class="personName">Issued To</label>
+                <input type="text" id="pName" name="pName" class="personText">
+                <br>
+                <input type="button" value="Issue Book"  onclick="issueBook()" class="issueButton">
+            </form>
+        </div>
+
+        <div class="table-container"><table class="report-table">
+           <thead><tr>
+            <th>ID</th>
+            <th>Book Name</th>
+            <th>Issude To</th>
+            <th>Issued Date and Time</th>
+            <th>Status</th>
+        </tr></thead>
+              
+
+            <tbody id="issued-books-table"></tbody>
+           
+            
+        </table></div>
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
